@@ -135,7 +135,7 @@ export default function App() {
           </span>
           <a
             className="btn-icon"
-            href="https://github.com"
+            href="https://github.com/kevinchu0801-beep/RegexAI"
             target="_blank"
             rel="noreferrer"
             title="源码"
