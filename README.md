@@ -6,6 +6,12 @@
 
 > 纯前端应用，零后端。API Key 仅保存在你的浏览器本地，不会上传到任何服务器。
 
+## 使用前提
+
+- Node.js 18 或更高版本
+- npm
+- DeepSeek、OpenAI 或其他 OpenAI 兼容服务的 API Key
+
 ## 功能特性
 
 - **自然语言生成正则**：输入"匹配中国手机号"，AI 流式生成正则，逐 token 写入编辑框。
@@ -53,6 +59,12 @@ npm run preview  # 预览构建产物
 | Base URL | `https://api.deepseek.com/v1` | OpenAI 兼容接口地址 |
 | Model | `deepseek-chat` | 可改为 `gpt-4o-mini`、`qwen-plus` 等 |
 
+## 隐私与安全
+
+- API Key 仅写入当前浏览器的 `localStorage`，不会进入仓库或应用自有后端。
+- 请求会从浏览器直接发送到你配置的模型服务商；使用前请确认该服务商的数据政策。
+- 不建议在公共或共享设备上长期保存 API Key，用完后可在设置中清除。
+
 ## 目录结构
 
 ```
@@ -74,4 +86,4 @@ src/
 
 ## License
 
-MIT
+[MIT](LICENSE)
